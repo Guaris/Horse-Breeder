@@ -7,18 +7,18 @@ function love.load()
   mp = 8
   spd = 5
 
-  horse = love.graphics.newImage("horse_r.jpg")
+  horse = love.graphics.newImage("img/horse_r.jpg")
 end
 
 function love.update(dt)
 
   -- controls for bela
   if love.keyboard.isDown("d") then
-    horse = love.graphics.newImage("horse_r.jpg")
+    horse = love.graphics.newImage("img/horse_r.jpg")
     x = x + 2
   end
   if love.keyboard.isDown("a") then
-    horse = love.graphics.newImage("horse_l.jpg")
+    horse = love.graphics.newImage("img/horse_l.jpg")
     x = x - 2
   end
 
@@ -26,9 +26,6 @@ function love.update(dt)
   function love.keyreleased(key)
     if key == "q" then
       love.event.quit()
-    end
-    if key == "h" then
-      hp = hp + 1
     end
   end
 
